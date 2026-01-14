@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/wiki/',
   title: "CosmoLand Wiki", // Название вкладки в браузере
   description: "Официальная вики сервера CosmoLand",
   lang: 'ru-RU', // Указывает браузеру, что сайт на русском
