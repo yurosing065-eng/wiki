@@ -51,7 +51,7 @@ export default defineConfig({
       {
         text: '🏗️ Механики',
         items: [
-          { text: 'Ракеты', link: '/buildings' }
+          { text: 'Общие игровые механики', link: '/buildings' }
         ]
       },
       {
@@ -80,7 +80,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'discord', link: 'https://discord.gg/твой_код' }
+      { icon: 'discord', link: 'https://discord.gg/yjHPGus5qt' }
     ],
 
     footer: {
