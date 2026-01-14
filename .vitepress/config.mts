@@ -6,11 +6,17 @@ export default defineConfig({
   description: "Официальная вики сервера CosmoLand",
   lang: 'ru-RU', // Указывает браузеру, что сайт на русском
   head: [
-    ['link', { rel: 'icon', href: '/logo1.png' }]
-  ],
+  ['link', { rel: 'icon', href: '/wiki/logo1.png' }] // Добавь /wiki/ в начало пути
+],
   themeConfig: {
+    notFound: {
+    title: 'СТРАНИЦА НЕ НАЙДЕНА',
+    quote: 'Похоже, вы забрели в неизведанную часть космоса.',
+    linkText: 'Вернуться на главную базу',
+  },
     // Перевод кнопки поиска
     search: {
+      
       provider: 'local',
       options: {
         locales: {
