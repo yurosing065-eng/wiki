@@ -51,7 +51,8 @@ export default defineConfig({
       {
         text: '🏗️ Механики',
         items: [
-          { text: 'Общие игровые механики', link: '/buildings' }
+          { text: 'Общие игровые механики', link: '/buildings' },
+          { text: 'Кейсы', link: '/crates' }
         ]
       },
       {
