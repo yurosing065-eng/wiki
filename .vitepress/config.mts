@@ -60,7 +60,8 @@ export default defineConfig({
         items: [
           { text: 'Соликс', link: '/solix' },
           { text: 'Зипфер', link: '/zypher' },
-          { text: 'Принц', link: '/prince' }
+          { text: 'Принц', link: '/prince' },
+          { text: 'Пегас', link: '/pegas' }
         ]
       },
       {
