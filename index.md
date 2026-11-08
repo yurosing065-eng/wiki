@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: "CosmoLand Wiki"
-  text: "Твой путеводитель по миру космоса"
-  tagline: Команды, привилегии и помощь по миру космоса
+  text: "Дневник космического путешественника"
+  tagline: Записи, звёздные иллюстрации и сноски
   image:
     src: /logo.png
     alt: CosmoLand Logo
@@ -14,11 +14,11 @@ hero:
       link: /start
     - theme: alt
       text: Перейти в Discord
-      link: https://discord.gg/yourlink
+      link: https://discord.gg/yjHPGus5qt
 
 features:
   - title: "Планеты"
-    details: "Крафтите детали для ракет, собирайте ракету и вперед к новым приключениям."
+    details: "Исследуй планеты, открывай новые маршруты и отправляйся в экспедиции."
     icon: 🌎
   - title: "Экономика"
     details: "Аукцион, работы и торговля между игроками. Стань самым богатым."

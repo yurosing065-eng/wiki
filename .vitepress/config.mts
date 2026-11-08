@@ -5,15 +5,47 @@ export default defineConfig({
   title: "CosmoLand Wiki", // Название вкладки в браузере
   description: "Официальная вики сервера CosmoLand",
   lang: 'ru-RU', // Указывает браузеру, что сайт на русском
+  appearance: 'dark',
+  locales: {
+    root: { label: 'Русский', lang: 'ru-RU' },
+    en: {
+      label: 'English',
+      lang: 'en',
+      link: '/en/',
+      themeConfig: {
+        nav: [
+          { text: 'Home', link: '/en/' },
+          { text: 'Guides', link: '/en/start' },
+          { text: 'Rockets', link: '/en/rockets' },
+          { text: 'Rules', link: '/en/rules' }
+        ],
+        sidebar: [
+          { text: '🚀 Getting started', items: [{ text: 'How to start', link: '/en/start' }] },
+          { text: '🏗️ Mechanics', items: [
+            { text: 'Server mechanics', link: '/en/buildings' },
+            { text: 'Service system', link: '/en/uslugi' }
+          ] },
+          { text: '🛰️ Space', items: [{ text: 'Rockets and flights', link: '/en/rockets' }] }
+        ],
+        outline: { label: 'On this page', level: [2, 3] },
+        docFooter: { prev: 'Previous', next: 'Next' }
+      }
+    }
+  },
   head: [
   ['link', { rel: 'icon', href: '/wiki/logo1.png' }] // Добавь /wiki/ в начало пути
 ],
   themeConfig: {
+    localeLinks: {
+      text: 'Язык'
+    },
     notFound: {
     title: 'СТРАНИЦА НЕ НАЙДЕНА',
-    quote: 'Похоже, вы забрели в неизведанную часть космоса.',
+    quote: 'Наши ученые еще не изучили данный раздел...',
     linkText: 'Вернуться на главную базу',
   },
+    sidebarMenuLabel: 'Меню',
+    returnToTopLabel: 'Наверх',
     // Перевод кнопки поиска
     search: {
       
@@ -36,7 +68,8 @@ export default defineConfig({
     // Верхнее меню
     nav: [
       { text: 'Главная', link: '/' },
-      { text: 'Гайды', link: '/start' }, // <-- ТУТ НУЖНА ЗАПЯТАЯ
+      { text: 'Гайды', link: '/start' },
+      { text: 'Ракеты', link: '/rockets' },
       { text: 'Правила', link: '/rules' }
     ],
 
@@ -52,26 +85,13 @@ export default defineConfig({
         text: '🏗️ Механики',
         items: [
           { text: 'Общие игровые механики', link: '/buildings' },
-          { text: 'Кейсы', link: '/crates' },
           { text: 'Механика продажи услуг', link: '/uslugi' }
         ]
       },
       {
-        text: '🔥Привилегии и возможности',
+        text: '🛰️ Космос',
         items: [
-          { text: 'Соликс', link: '/solix' },
-          { text: 'Зипфер', link: '/zypher' },
-          { text: 'Принц', link: '/prince' },
-          { text: 'Пегас', link: '/pegas' }
-        ]
-      },
-      {
-        text: '🔥Крафты',
-        items: [
-          { text: 'Деталь ракеты: "Двигатель"', link: '/dvigatel' },
-          { text: 'Деталь ракеты: "Топливная система"', link: '/system' },
-          { text: 'Деталь ракеты: "Система управления"', link: '/control' },
-          { text: 'Деталь ракеты: "Электросистема"', link: '/electro' }
+          { text: 'Ракеты и полёты', link: '/rockets' }
         ]
       }
     ],
@@ -88,7 +108,7 @@ export default defineConfig({
 
     footer: {
       message: 'CosmoLand — Космическое выживание',
-      copyright: '© 2025-2026 CosmoLand'
+      copyright: '© 2025–2026 CosmoLand · Не связано с Mojang AB'
     }
   }
 })
