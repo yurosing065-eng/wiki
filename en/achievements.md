@@ -2,8 +2,6 @@
 
 CosmoLand has its own space-themed achievement system. Explore new worlds, survive dangerous places and complete entries in your journal.
 
-### First launch
-
 ![First launch achievement](/achievement-first-launch.png)
 
 ## Space travel
