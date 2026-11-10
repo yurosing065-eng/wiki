@@ -111,6 +111,13 @@ body:has(.VPHome) .VPFooter {
   background: rgba(21, 21, 21, .86) !important;
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--vp-c-divider);
+  z-index: 100;
+}
+
+.VPNavBarHamburger {
+  position: relative;
+  z-index: 101;
+  pointer-events: auto;
 }
 
 .VPSidebar {

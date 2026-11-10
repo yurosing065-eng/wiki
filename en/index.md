@@ -23,7 +23,4 @@ features:
   - title: "Economy"
     details: "Trade, work and build your fortune together with other players."
     icon: 💰
-  - title: "Nations"
-    details: "Create alliances and build your own place among the stars."
-    icon: 🚩
 ---

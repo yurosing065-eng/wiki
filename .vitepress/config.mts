@@ -23,7 +23,11 @@ export default defineConfig({
           { text: '🚀 Getting started', items: [{ text: 'How to start', link: '/en/start' }] },
           { text: '🏗️ Mechanics', items: [
             { text: 'Server mechanics', link: '/en/buildings' },
-            { text: 'Service system', link: '/en/uslugi' }
+            { text: 'Service system', link: '/en/uslugi' },
+            { text: 'Profile menu', link: '/en/profile' },
+            { text: 'Private regions', link: '/en/privates' },
+            { text: 'Custom achievements', link: '/en/achievements' },
+            { text: 'Useful mods', link: '/en/useful-mods' }
           ] },
           { text: '🛰️ Space', items: [{ text: 'Rockets and flights', link: '/en/rockets' }] }
         ],
@@ -85,7 +89,11 @@ export default defineConfig({
         text: '🏗️ Механики',
         items: [
           { text: 'Общие игровые механики', link: '/buildings' },
-          { text: 'Механика продажи услуг', link: '/uslugi' }
+          { text: 'Механика продажи услуг', link: '/uslugi' },
+          { text: 'Меню профиля', link: '/profile' },
+          { text: 'Приваты', link: '/privates' },
+          { text: 'Кастомные достижения', link: '/achievements' },
+          { text: 'Полезные моды', link: '/useful-mods' }
         ]
       },
       {
